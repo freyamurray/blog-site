@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<script>
+    function themeSwitch() {
+        const element = document.body;
+        const button = document.getElementById("theme-switch-button");
+        element.classList.toggle("dark");
+    }
+</script>
+
 <body>
 
     <header>
@@ -16,7 +24,7 @@
                 [title of site]
             </div>
             <div class="header" id="theme-button">
-                <button class="theme-switch" id="theme-switch-button">theme</button>
+                <button class="theme-switch" id="theme-switch-button" onclick="themeSwitch()">theme</button>
             </div>
         </div>
     </header>
@@ -48,11 +56,13 @@
                         </div>
                         <div class="blog-select" id="blog-3">
                             <p>example title 3</p>
-                        </div>                                                
+                        </div>
                     </div>
                     <div class="blog-content" id="blog-preview">
                         <object data="#" type="preview">
-                            [preview of selected blog post]
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ab quibusdam
+                                excepturi, voluptate reiciendis fuga animi voluptas reprehenderit atque dolorum nisi sed
+                                amet placeat vitae mollitia doloribus, itaque porro quidem.</p>
                             <a href="#" class="readmore" id="postid">[readmore]</a>
                         </object>
                     </div>
