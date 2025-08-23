@@ -1,12 +1,14 @@
 :root {
     --bg-colour: #ffffff;
     --text-colour: #000000;
+    --link-colour: blue;
 
 }
 
 .dark {
     --bg-colour: #000000;
     --text-colour: #ffffff;
+    --link-colour: #58a6ff;
 }
 
 body {
@@ -80,6 +82,10 @@ body {
     overflow-x: auto;
 }
 
+.link {
+    color: var(--link-colour);
+}
+
 @media (max-width: 800px) {
     .blog {
         max-height: none;
@@ -107,6 +113,10 @@ body {
 
     #contact-container {
         align-items: center;
+    }
+
+    .contact-type {
+        padding: .5rem;
     }
 }
 
