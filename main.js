@@ -19,7 +19,6 @@ function themeSwitch() {
     if (button) button.textContent = isDark ? "light" : "dark";
 }
 
-
 function openPost(event, postName) {
     var i, blogpreview, bloglink;
 
