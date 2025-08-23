@@ -1,7 +1,7 @@
 :root {
     --bg-colour: #ffffff;
-    --text-colour: #000000;
-    --link-colour: rgb(0, 0, 0);
+    --text-colour: #222168;
+    --link-colour: #222168;
 
 }
 
@@ -99,6 +99,7 @@ h1, h2, h3 {
     padding: 1rem;
     margin: 1rem auto;
     border: 2px solid;
+    box-shadow: 5px 5px var(--text-colour);
     max-width: 70rem;
 }
 
@@ -123,6 +124,7 @@ h1, h2, h3 {
     padding: 1rem 1rem 2rem 1rem;
     margin: 1rem auto;
     border: 2px solid;
+    box-shadow: 5px 5px var(--text-colour);
     max-height: 50rem;
     max-width: 70rem;
     justify-content: center;
@@ -238,13 +240,15 @@ h1, h2, h3 {
 .image-container {
     border: 2px solid;
     border-bottom: none;
-    margin-top: 1rem;
+    box-shadow: 5px 5px var(--text-colour);
+    margin: 1rem 0 ;
     height: 6rem;
     display: flex;
 }
 
 .blog-post-content {
     border: 2px solid;
+    box-shadow: 5px 5px var(--text-colour);
     padding: 1rem;
     max-height: 30rem;
     overflow-x: auto;
