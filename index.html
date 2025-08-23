@@ -37,12 +37,12 @@
 <body>
 
     <header>
-        <div class="header" id="site-header">
-            <div class="header" id="site-title">
-                [title of site]
+        <div role="banner" class="header" id="site-header">
+            <div id="site-title">
+                <h1>[title of site]</h1>
             </div>
             <div class="header" id="theme-button">
-                <button class="theme-switch" id="theme-switch-button" onclick="themeSwitch()">theme</button>
+                <button role="button" class="theme-switch" id="theme-switch-button" onclick="themeSwitch()">theme</button>
             </div>
         </div>
     </header>
@@ -50,73 +50,88 @@
     <main>
         <section>
             <div class="about" id="about-container">
-                <div class="section-title" id="about-title">
-                    [about]
-                </div>
-                <div class="about" id="about-content">
+                <h2>[about]</h2>
+                <article class="about" id="about-content">
                     <p>I'm Ewan. I'm very handsome and also clever.</p>
-                </div>
+                </article>
             </div>
         </section>
 
         <section>
             <div class="blog" id="blog-container">
-                <div class="section-title" id="blog-title">
-                    [blog]
-                </div>
+                <heading class="section-title" id="blog-title">
+                    <h2>[blog]</h2>
+                </heading>
                 <div class="blog-content">
-                    <div class="blog-content" id="blog-nav">
 
-                        <a href="#" class="bloglink" id="post-1-link" onclick="openPost(event, 'post-1')">
+                    <nav class="blog-content" id="blog-nav">
+                        <button role="button" href="#" class="bloglink" id="post-1-link" onclick="openPost(event, 'post-1')">
                             <div class="blog-select" id="blog-1">
                                 <p>example title 1</p>
                             </div>
-                        </a>
+                        </button>
 
-                        <a href="#" class="bloglink" id="post-2-link" onclick="openPost(event, 'post-2')">
+                        <button role="button" href="#" class="bloglink" id="post-2-link" onclick="openPost(event, 'post-2')">
                             <div class="blog-select" id="blog-2">
                                 <p>example title 2</p>
                             </div>
-                        </a>
+                        </button>
 
-                        <a href="#" class="bloglink" id="post-3-link" onclick="openPost(event, 'post-3')">
+                        <button role="button" href="#" class="bloglink" id="post-3-link" onclick="openPost(event, 'post-3')">
                             <div class="blog-select" id="blog-3">
                                 <p>example title 3</p>
                             </div>
-                        </a>
+                        </button>
+                    </nav>
 
-                    </div>
-                    <div class="blogpreview" id="post-1" style="display: block;">
-                        <span class="section-title">[post 1]</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ab quibusdam
-                            excepturi, voluptate reiciendis fuga animi voluptas reprehenderit atque dolorum nisi sed
-                            amet placeat vitae mollitia doloribus, itaque porro quidem.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, fugit ut! Delectus veritatis
-                            odit maiores rem magnam, saepe exercitationem enim dicta at, fuga fugiat id? Dolor beatae
-                            cum magni nobis!</p>
-                        <a href="#" class="link" id="postid">read more</a>
-                    </div>
-                    <div class="blogpreview" id="post-2" style="display: none;">
-                        <span class="section-title">[post 2]</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nostrum recusandae
-                            quisquam corrupti facilis quis aspernatur reiciendis, inventore dolor saepe officiis qui et
-                            sunt autem, deleniti quae unde velit nobis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo amet minus quos enim
-                            accusantium hic eaque libero assumenda obcaecati. Esse, obcaecati provident pariatur soluta
-                            eaque assumenda ea! Ab, libero. Vitae!</p>
-                        <a href="#" class="link" id="read-more-2">read more</a>
-                    </div>
+                    <article>
+                        <div class="blogpreview" id="post-1" style="display: block;">
+                            <h3>[post 1]</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ab quibusdam
+                                excepturi, voluptate reiciendis fuga animi voluptas reprehenderit atque dolorum nisi sed
+                                amet placeat vitae mollitia doloribus, itaque porro quidem.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, fugit ut! Delectus
+                                veritatis
+                                odit maiores rem magnam, saepe exercitationem enim dicta at, fuga fugiat id? Dolor
+                                beatae
+                                cum magni nobis!</p>
+                            <a href="#" class="link" id="postid">read more</a>
+                        </div>
+                    </article>
 
-                    <div class="blogpreview" id="post-3" style="display: none;">
-                        <span class="section-title">[post 3]</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam est modi nostrum
-                            distinctio illo non assumenda eveniet eligendi animi esse excepturi numquam velit vitae
-                            consequatur, officiis accusamus sit aperiam eos.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et aut id beatae. Eveniet
-                            quas molestiae, earum nemo fuga non dolor error distinctio, numquam quos maxime praesentium,
-                            ratione aliquid reiciendis.</p>
-                        <a href="#" class="link" id="read-more-3">read more</a>
-                    </div>
+                    <article>
+                        <div class="blogpreview" id="post-2" style="display: none;">
+                            <h3>[post 2]</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nostrum
+                                recusandae
+                                quisquam corrupti facilis quis aspernatur reiciendis, inventore dolor saepe officiis qui
+                                et
+                                sunt autem, deleniti quae unde velit nobis.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo amet minus quos enim
+                                accusantium hic eaque libero assumenda obcaecati. Esse, obcaecati provident pariatur
+                                soluta
+                                eaque assumenda ea! Ab, libero. Vitae!</p>
+                            <a href="#" class="link" id="read-more-2">read more</a>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="blogpreview" id="post-3" style="display: none;">
+                            <h3>[post 3]</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam est modi nostrum
+                                distinctio illo non assumenda eveniet eligendi animi esse excepturi numquam velit vitae
+                                consequatur, officiis accusamus sit aperiam eos.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam et aut id beatae.
+                                Eveniet
+                                quas molestiae, earum nemo fuga non dolor error distinctio, numquam quos maxime
+                                praesentium,
+                                ratione aliquid reiciendis.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quaerat aliquam, ratione
+                                rerum laborum impedit expedita dolores optio officia saepe sequi totam nemo atque,
+                                soluta cumque at minima obcaecati accusamus.</p>
+                            <a href="#" class="link" id="read-more-3">read more</a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>

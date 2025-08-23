@@ -18,16 +18,21 @@ body {
     color: var(--text-colour);
 }
 
+h1, h2, h3 {
+    font-weight: 1;
+    margin-top: 0;
+}
+
 .header {
     display: flex;
-    position: sticky;
-    top: 0;
+    margin-top: 1rem;
 }
 
 #site-title {
     margin: auto;
-    font-size: 3rem;
+    /* font-size: 3em; */
     min-width: auto;
+    margin-top: 1rem;
 }
 
 #theme-button {
@@ -39,7 +44,7 @@ body {
 
 .theme-switch {
     border: 2px solid var(--text-colour);
-    border-radius: .5rem;
+    /* border-radius: .5rem; */
     padding: .5rem;
     background-color: var(--bg-colour);
     color: var(--text-colour);
@@ -64,10 +69,10 @@ body {
     border: 2px solid;
 }
 
-.section-title {
-    font-size: 1.5rem;
+/* .section-title {
+    font-size: 1.5em;
     margin-bottom: 1rem;
-}
+} */
 
 .blog {
     display: flex;
@@ -84,6 +89,7 @@ body {
     padding: 1rem;
     margin: 1rem;
     border: 2px solid;
+    max-height: 50rem;
 }
 
 #blog-nav {
@@ -91,6 +97,7 @@ body {
     border-bottom: none;
     padding-right: 1rem;
     margin-right: 1rem;
+    display: flex;
     flex-direction: column;
     min-width: 10rem;
     max-width: none;
@@ -102,21 +109,24 @@ body {
 
 
 .bloglink {
-    width: 100;
     padding: 0 0 0 .5rem;
-    text-decoration: none;
     color: var(--text-colour);
-    transition-duration: .3s;
+    background-color: var(--bg-colour);
+    border: none;
+    text-align: left;
+    font-size: 1rem;
+    /* transition-duration: .3s; */
     margin-bottom: .2rem;
+    cursor: pointer;
 }
 
 .bloglink:hover {
-    color: var(--bg-colour);
-    background-color: var(--text-colour);
+    text-decoration: underline;
 }
 
 .bloglink:active {
-    text-decoration: underline;
+    color: var(--bg-colour);
+    background-color: var(--text-colour);
 }
 
 .bloglink.active {
@@ -168,6 +178,8 @@ body {
 
 #contact-container {
     /* border: solid; */
+    position: relative;
+    bottom: 1;
     margin: 1rem;
     padding: 1rem;
     justify-content: space-evenly;
