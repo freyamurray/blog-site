@@ -6,33 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[site name]</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
-
-<script>
-    function themeSwitch() {
-        const element = document.body;
-        const button = document.getElementById("theme-switch-button");
-        element.classList.toggle("dark");
-    }
-
-    function openPost(event, postName) {
-        var i, blogpreview, bloglink;
-
-        blogpreview = document.getElementsByClassName("blogpreview");
-        for (i = 0; i < blogpreview.length; i++) {
-            blogpreview[i].style.display = "none";
-        }
-
-        bloglink = document.getElementsByClassName("bloglink");
-        for (i = 0; i < bloglink.length; i++) {
-            bloglink[i].className = bloglink[i].className.replace(" active", "");
-        }
-
-        document.getElementById(postName).style.display = "block";
-        event.currentTarget.classList.add("active")
-    }
-
-</script>
 
 <body>
 
@@ -95,7 +70,7 @@
                                 odit maiores rem magnam, saepe exercitationem enim dicta at, fuga fugiat id? Dolor
                                 beatae
                                 cum magni nobis!</p>
-                            <a href="#" class="link" id="postid">read more</a>
+                            <a href="blogpost.html" class="link" id="postid">read more</a>
                         </div>
                     </article>
 
@@ -111,7 +86,7 @@
                                 accusantium hic eaque libero assumenda obcaecati. Esse, obcaecati provident pariatur
                                 soluta
                                 eaque assumenda ea! Ab, libero. Vitae!</p>
-                            <a href="#" class="link" id="read-more-2">read more</a>
+                            <a href="blogpost.html" class="link" id="read-more-2">read more</a>
                         </div>
                     </article>
 
@@ -129,7 +104,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quaerat aliquam, ratione
                                 rerum laborum impedit expedita dolores optio officia saepe sequi totam nemo atque,
                                 soluta cumque at minima obcaecati accusamus.</p>
-                            <a href="#" class="link" id="read-more-3">read more</a>
+                            <a href="blogpost.html" class="link" id="read-more-3">read more</a>
                         </div>
                     </article>
                 </div>
