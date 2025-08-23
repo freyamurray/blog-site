@@ -34,7 +34,23 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    margin: 1rem;
+    margin: 1.5rem;
+}
+
+.theme-switch {
+    border: 2px solid var(--text-colour);
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: var(--bg-colour);
+    color: var(--text-colour);
+    transition-duration: .2s;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.theme-switch:hover {
+    background-color: var(--text-colour);
+    color: var(--bg-colour);
 }
 
 .about {
@@ -45,7 +61,7 @@ body {
 #about-container {
     padding: 1rem;
     margin: 1rem;
-    border: solid;
+    border: 2px solid;
 }
 
 .section-title {
@@ -67,11 +83,11 @@ body {
 #blog-container {
     padding: 1rem;
     margin: 1rem;
-    border: solid;
+    border: 2px solid;
 }
 
 #blog-nav {
-    border-right: solid;
+    border-right: 1px solid;
     border-bottom: none;
     padding-right: 1rem;
     margin-right: 1rem;
@@ -80,6 +96,32 @@ body {
     max-width: none;
     max-height: 20rem;
     overflow-x: auto;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+
+.bloglink {
+    width: 100;
+    padding: 0 0 0 .5rem;
+    text-decoration: none;
+    color: var(--text-colour);
+    transition-duration: .3s;
+    margin-bottom: .2rem;
+}
+
+.bloglink:hover {
+    color: var(--bg-colour);
+    background-color: var(--text-colour);
+}
+
+.bloglink:active {
+    text-decoration: underline;
+}
+
+.bloglink.active {
+    color: var(--bg-colour);
+    background-color: var(--text-colour);
 }
 
 .link {
@@ -96,7 +138,7 @@ body {
     }
 
     #blog-nav {
-        border-bottom: solid;
+        border-bottom: 1px solid;
         border-right: none;
         padding-bottom: 1rem;
         margin-bottom: 1rem;
