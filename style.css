@@ -239,7 +239,6 @@ h1, h2, h3 {
 
 .image-container {
     border: 2px solid;
-    border-bottom: none;
     box-shadow: 5px 5px var(--text-colour);
     margin: 1rem 0 ;
     height: 6rem;
